@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+@font-face {
+  font-family: "Good Dog";
+  src: url("./font/gooddc__-webfont.woff2") format("woff2"),
+    url("./font/gooddc__-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #212121;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.first-page {
+  height: 1000px;
+  background-image: url(./img/firstpage-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 48px 9px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.first-page-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: auto;
+}
+
+.nav-menu {
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.nav-menu a {
+  font-family: "Montserrat Light", sans-serif;
+  font-size: 35px;
+  color: #afc67b;
+  opacity: 0.8;
+  margin-right: 2rem;
+
+  text-transform: uppercase;
+}
+
+.logo {
+  background-image: url(./img/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 141px;
+  height: 121px;
+  margin-top: 75px;
+}
+
+.first-page-text {
+  margin-top: 120px;
+}
+
+.first-page-text p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 75px;
+  text-transform: uppercase;
+  color: #9baf6d;
+}
+
+.first-page-text p::first-line {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  color: #afc67b;
+}
+
+.learn-more {
+  margin-top: 145px;
+  max-width: 390px;
+  background-color: rgba(78, 84, 68, 0.75);
+  color: #afc67b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  opacity: 0.9;
+}
+
+.second-page {
+  background-image: url(./img/second-page-bg.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 170px 100px;
+}
+
+.second-page-text {
+  max-width: 530px;
+  margin-right: auto;
+}
+
+.simple-p {
+  margin-top: 40px;
+}
+
+.good-dog-p {
+  font-size: 40px;
+  font-family: "Good Dog";
+  color: #afc67b;
+}
+
+.simple-p {
+  font-size: 25px;
+  font-family: "Montserrat Thin";
+  color: white;
+  opacity: 0.9;
+  text-align: left;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.third-page {
+  background-color: rgba(78, 84, 68, 0.8);
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 48px 9px rgba(0, 0, 0, 0.5);
+  padding: 100px 0;
+}
+.new-features {
+  max-width: 27%;
+}
+
+.features-logo {
+  width: 30px;
+  height: 35px;
+  background-image: url(./img/Brush.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.fourth-page {
+  padding: 100px 0;
+}
+
+.fourth-page-content {
+  max-width: 1100px;
+  height: auto;
+  background-color: rgba(78, 84, 68, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  box-shadow: 0px 0px 48px 9px rgba(0, 0, 0, 0.5);
+}
+
+#food-header {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.row-food {
+  width: 100%;
+  height: 275px;
+  display: flex;
+  text-align: center;
+}
+.food-head-text {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  flex-grow: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 45px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  opacity: 0.8;
+  color: white;
+}
+.food-head-text::first-line {
+  font-family: "Good Dog";
+  font-size: 45px;
+  color: #afc67b;
+  text-transform: lowercase;
+}
+
+.dish {
+  width: 50%;
+  display: flex;
+}
+.dish-back {
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.dish-img {
+  width: 50%;
+}
+
+.dish-text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dish-text-name {
+  font-size: 30px;
+  font-family: "Good Dog";
+  color: #afc67b;
+}
+.dish-text-desc {
+  font-size: 15px;
+  font-family: "Montserrat Thin";
+  color: white;
+  opacity: 0.9;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  width: 75%;
+  margin: 1.5rem 0;
+}
+.dish-text-price {
+  font-size: 30px;
+  font-family: "Good Dog";
+  color: white;
+}
+
+#dish1 {
+  background-image: url(./img/dish1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dish2 {
+  background-image: url(./img/dish2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dish3 {
+  background-image: url(./img/dish3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dish4 {
+  background-image: url(./img/dish4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dish5 {
+  background-image: url(./img/dish5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dish6 {
+  background-image: url(./img/dish6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
